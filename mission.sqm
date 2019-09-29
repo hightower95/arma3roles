@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=18;
+		nextID=19;
 	};
 	class Camera
 	{
-		pos[]={14678.063,97.295845,16757.881};
+		pos[]={14629.251,46.48122,16750.699};
 		dir[]={-0.71528482,-0.69618422,0.062361874};
 		up[]={-0.69357145,0.71785307,0.06046829};
 		aside[]={0.086863987,9.52954e-007,0.99633551};
@@ -74,7 +74,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			dataType="Group";
@@ -95,7 +95,6 @@ class Mission
 					class Attributes
 					{
 						init="call{[this] call htz_fnc_setAsQuartermaster}";
-						isPlayer=1;
 					};
 					id=3;
 					type="B_RangeMaster_F";
@@ -188,33 +187,17 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14616.242,17.911438,16732.314};
-						angles[]={0,0.56111223,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-					};
-					id=11;
-					type="UK3CB_BAF_Rifleman_MTP";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={14615.407,17.911438,16733.842};
+						position[]={14604.633,17.911438,16750.479};
 						angles[]={0,1.1543015,0};
 					};
 					side="West";
-					flags=5;
+					flags=7;
 					class Attributes
 					{
 					};
@@ -226,6 +209,78 @@ class Mission
 			{
 			};
 			id=10;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14602.169,17.911438,16748.684};
+						angles[]={6.2379365,5.4199767,0.0066803009};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=11;
+					type="UK3CB_BAF_Rifleman_MTP";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=18;
 		};
 	};
 };

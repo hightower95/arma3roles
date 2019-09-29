@@ -1,3 +1,5 @@
-params ["_player"];
+params ["_target"];
 
-_player getVariable ["selectedRole", ""];
+_var = _target getVariable ["selectedRole", ""];
+
+_var;
